@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>ポートフォリオ</title>
+    <meta name="description" content="小塩憲太のポートフォリオページ。オンラインスクール TechAcademyの課題提出物として作成しました。
+    今後の各Lessonで作成するアプリケーションも順次掲載します。">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <img src="./image/icon.jpg" alt="ページ作成者のアイコン画像">
+            <h1>小塩 憲太</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2 id="about">About</h2>
+            <h3>自己紹介</h3>
+            <p>小塩 憲太(会社員)</p>
+            <p>兵庫県の某ときの街出身。IT系企業でITとは関係のない仕事をしています。</p>
+            <p>スキルアップと転職の可能性を広げるため、TechAcademyに参加しています。</p>
+            <p>このポートフォリオを見て気になった方は、<a href="#contact">Contact</a>よりご連絡お願いします。</p>
+            <h3>リンク</h3>
+            <ul id="linkList">
+                <li><a title="ダミー" href="#" target="_blank">FaceBook</a></li>
+                <li><a title="ダミー" href="#" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/kekosh" target="_blank">github</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="work">Work</h2>
+            <h3>アプリ紹介</h3>
+            <div class="appContainer">
+                <div class="incontainer">
+                    <div class="containerBox">
+                        <p>メッセージボード</p>
+                        <a href="#" target="_blank">
+                            <img class="icon" src="./image/whitebord.jpg" alt="メッセージボード">
+                        </a>
+                    </div>
+                    <div class="containerBox">
+                        <p>Lesson6で作成するメッセージボードアプリケーションです。</p>
+                    </div>
+                </div>
+                <div class="incontainer">
+                    <div class="containerBox">
+                        <p>Twitterクローン</p>
+                        <a href="#" target="_blank">
+                            <img class="icon" src="./image/TwitterIcon.jpg" alt="Twitterクローン">
+                        </a>
+                    </div>
+                    <div class="containerBox">
+                        <p>Lesson7で作成するTwitterのクローンアプリケーションです。</p>
+                    </div>
+                </div>
+                <div class="incontainer">
+                    <div class="containerBox">
+                        <p>モノリスト</p>
+                        <a href="#" target="_blank">
+                            <img class="icon" src="./image/monoList.jpg" alt="モノリスト">
+                        </a>
+                    </div>
+                    <div class="containerBox">
+                        <p>Leeson8で作成するモノリストアプリケーションです。</p>
+                    </div>
+                </div>
+                <div class="incontainer">
+                    <div class="containerBox">
+                        <p>オリジナルサービス</p>
+                        <a href="#" target="_blank">
+                            <img class="icon" src="./image/original.jpg" alt="オリジナルサービス">
+                        </a>
+                    </div>
+                    <div class="containerBox">
+                        <p>Lesson9で作成するオリジナルアプリケーションです。</p>
+                    </div>
+                </div>                
+            </div>
+            <!-- floatによる左詰めを解除 -->
+            <div style="clear:both;"></div>
+        </section>
+        <section>
+            <h2 id="contact">Contact</h2>
+            <h3>連絡先</h3>
+            <p>このページと私に関するお問い合わせはこちらへどうぞ。</p>
+            <address>
+                Tel:090-XXXX-YYYY<br/>
+                EMAIL:xxxxxx.yyyyy@gmail.com<br/>
+                〒000-0000 東京都○○区○○町 1-1-11<br/>
+            </address>
+        </section>
+        <footer>
+            <small>&copy;2016 kenta koshio.</small>
+        </footer>
+    </div>
+</body>
 </html>
