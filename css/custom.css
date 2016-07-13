@@ -10,9 +10,16 @@ body{
     font-family: YuGothic,"游ゴシック","メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
 }
 
-span.red
+span.uncreated
 {
     color:red;
+    font-style: italic;
+}
+
+span.created
+{
+    color:blue;
+    font-style: normal;
 }
 
 /* 背景画像の設定 */
@@ -77,6 +84,10 @@ nav ul li a.selected{
     border-style: solid;
     border-width: thin;
     text-align: center;
+}
+
+.titledesign{
+    background-color: red;
 }
 
 .icon{
